@@ -680,6 +680,11 @@
               <FileType>1</FileType>
               <FilePath>..\FreeRTOS\task\freertos_task.c</FilePath>
             </File>
+            <File>
+              <FileName>freertos_timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\timer\freertos_timer.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

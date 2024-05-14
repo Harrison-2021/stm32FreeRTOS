@@ -53,12 +53,17 @@ void taskFunctionStatic(void *arg) { // 要有参数-函数指针
 
 void showTaskFunction(void *arg) { // 要有参数-函数指针
     char pcWriteBuffer[150]; // 非静态，静态内存固定
+    //TickType_t xLastWakeTime;
+    //xLastWakeTime = xTaskGetTickCount();//获取当前时间
     while(1) {
 		vTaskList(pcWriteBuffer);
         printf("-----------------------------------------\r\n");
         printf("Name\t\tState\tPriority  Stack  Num\r\n");
         printf("%s\r\n",pcWriteBuffer);
+        /* 相对延时函数，如果有中断，延迟时间不固定 */
         osDelay(1000); // 取决于tick频率，本案例1ms
+        /* 绝对延时函数，基于实际的时间点来解除任务的阻塞 */
+        //vTaskDelayUntil(&xLastWakeTime,1000);
 	}
 }
 

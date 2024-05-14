@@ -33,6 +33,7 @@
 "stm32freertos\heap_4.o"
 "stm32freertos\port.o"
 "stm32freertos\freertos_task.o"
+"stm32freertos\freertos_timer.o"
 --library_type=microlib --strict --scatter "stm32FreeRTOS\stm32FreeRTOS.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
