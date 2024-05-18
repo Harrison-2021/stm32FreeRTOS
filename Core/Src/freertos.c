@@ -47,6 +47,7 @@
 /* USER CODE BEGIN Variables */
 extern void freertos_task_init(void);
 extern void freertos_timer_init(void);
+extern void freertos_queue_init(void);
 /* USER CODE END Variables */
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
@@ -114,8 +115,9 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
-  freertos_task_init();
-  freertos_timer_init();
+  //freertos_task_init();
+  //freertos_timer_init();
+  freertos_queue_init();
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -137,7 +139,9 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   for(;;)
   {
+    taskENTER_CRITICAL();
     printf("this is defaultTask\r\n");
+    taskEXIT_CRITICAL();
     osDelay(1000);
   }
   /* USER CODE END StartDefaultTask */

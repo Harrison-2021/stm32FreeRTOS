@@ -6,10 +6,11 @@
 
 #define TASK_STACk_SIZE 128
 
-/* 创建的任务的句柄 */
-osThreadId_t taskHandle;      // 指针类型
- TaskHandle_t taskHandleState;
-osThreadId_t taskHandlePrint; // 指针类型
+/* 创建的任务的句柄-注意不是osThreadId_t-删除挂起任务无法调用*/
+TaskHandle_t taskHandle;        // 指针类型
+TaskHandle_t taskHandleState;
+TaskHandle_t taskHandlePrint;   // 指针类型
+
 /* 任务分配的栈内存地址 */
 StackType_t stackBuf[TASK_STACk_SIZE];
 /* TCB内存地址 */

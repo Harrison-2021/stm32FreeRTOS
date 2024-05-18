@@ -685,6 +685,11 @@
               <FileType>1</FileType>
               <FilePath>..\FreeRTOS\timer\freertos_timer.c</FilePath>
             </File>
+            <File>
+              <FileName>freertos_queue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\queue\freertos_queue.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
