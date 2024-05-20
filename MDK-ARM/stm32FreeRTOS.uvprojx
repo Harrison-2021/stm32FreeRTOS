@@ -690,6 +690,11 @@
               <FileType>1</FileType>
               <FilePath>..\FreeRTOS\queue\freertos_queue.c</FilePath>
             </File>
+            <File>
+              <FileName>freertos_semaphore.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\semaphore\freertos_semaphore.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

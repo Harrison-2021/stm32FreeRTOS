@@ -67,10 +67,12 @@ void que2SendTaskFuc(void *arg) {
         sprintf((char *)item.data,"messager:%d",item.id);
 
         // 向队列中写入数据-向队列尾部写数据
+        #if 1
         if(xQueueSend(queueHandle2,&item,100)!= pdPASS ) {
             printf("Fail to xQueueSend2!\r\n");
             break;
         }
+        #endif
 
         osPrintf("que2_send %s\r\n",(char *)item.data);
         osDelay(1000);
