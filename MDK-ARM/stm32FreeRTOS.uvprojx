@@ -695,6 +695,11 @@
               <FileType>1</FileType>
               <FilePath>..\FreeRTOS\semaphore\freertos_semaphore.c</FilePath>
             </File>
+            <File>
+              <FileName>freertos_priority_reverse.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\semaphore\freertos_priority_reverse.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

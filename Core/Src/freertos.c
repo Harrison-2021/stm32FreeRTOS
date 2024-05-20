@@ -49,6 +49,7 @@ extern void freertos_task_init(void);
 extern void freertos_timer_init(void);
 extern void freertos_queue_init(void);
 extern void freertos_semaphore_init(void);
+extern void freertos_priority_reverse_init(void);
 /* USER CODE END Variables */
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
@@ -119,7 +120,8 @@ void MX_FREERTOS_Init(void) {
   //freertos_task_init();
   //freertos_timer_init();
   //freertos_queue_init();
-  freertos_semaphore_init();
+  //freertos_semaphore_init();
+  freertos_priority_reverse_init();
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
