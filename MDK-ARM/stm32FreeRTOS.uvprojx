@@ -705,6 +705,11 @@
               <FileType>1</FileType>
               <FilePath>..\FreeRTOS\semaphore\freertos__event.c</FilePath>
             </File>
+            <File>
+              <FileName>freertos__notice.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FreeRTOS\semaphore\freertos__notice.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

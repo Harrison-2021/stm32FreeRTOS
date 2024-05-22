@@ -38,6 +38,7 @@
 "stm32freertos\freertos_semaphore.o"
 "stm32freertos\freertos_priority_reverse.o"
 "stm32freertos\freertos__event.o"
+"stm32freertos\freertos__notice.o"
 --library_type=microlib --strict --scatter "stm32FreeRTOS\stm32FreeRTOS.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
